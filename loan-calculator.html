@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta property="og:image" content="">
+  <title>Loan Calculator | Car Show Hero</title>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/items.css">
+  <link rel="stylesheet" href="css/calculator.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/select.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="icon" href="img/favicon.jpg" type="image/x-icon" />
+</head>
+  <body>
+    <div class="hid">
+    
+    <div id="mySidenav" class="sidenav">
+      <div class="cont">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="garage-t-shirt.html">Garage T-shirt</a></li>
+          <li><a href="loan-calculator.html">Loan Calculator</a></li>
+          <li><a href="vlog.html">Video</a></li>
+          <li><a href="car-shows.html">Car Shows</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <a href="javascript:void(0)" class="closebtn" id="closenav" onclick="closeNav()">&times;</a>
+      </div>
+    </div>
+    
+    <header>
+      <div class="container va">
+        <div class="logo-block spb">
+          <a href="index.html" class="logo" title="link to home page">
+            <img src="img/logotype.png" alt="logotype in header" />
+          </a>
+          <a href="#" class="menu-burger" id="opennav">
+            <svg height="384pt" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg">
+              <path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+              <path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+              <path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+            </svg>
+          </a>
+        </div>
+        <div class="header-right">
+          <div class="header-top flex-end">
+            <div class="head-left spb">
+              <div class="head-icons va">
+                <a href="#" class="head-item head-icon">
+                  <svg id="cart" width="28" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.0002 25"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>cart</title><path class="cls-1" d="M27.9162,6.5212l-4.73,10.7a1.0383,1.0383,0,0,1-.95.611h-13a1.0331,1.0331,0,0,1-1.0013-.747L4.0052,2.0374H1.0358A1.0308,1.0308,0,0,1,0,1.018,1.03,1.03,0,0,1,1.0358-.0006H4.7822a1.0338,1.0338,0,0,1,1.0013.747l4.23,15.0481H21.5457l3.8327-8.6619H12.6028a1.0191,1.0191,0,1,1,0-2.0379H26.9666a1.0325,1.0325,0,0,1,.8632.4584A1.0169,1.0169,0,0,1,27.9162,6.5212ZM8.2522,20.38a2.31,2.31,0,1,1-2.3479,2.31A2.3317,2.3317,0,0,1,8.2522,20.38Zm14.5193,0a2.3416,2.3416,0,0,1,2.5033,2.14,2.2814,2.2814,0,0,1-.57,1.6817,2.36,2.36,0,0,1-1.6056.7979h-.1726a2.3118,2.3118,0,0,1-.1554-4.62Z" transform="translate(0 0.0006)"/></svg>
+                </a>
+                <a href="#" class="head-item head-icon">
+                  <svg id="heart" width="29" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.6408 24.2489"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>heart</title><path class="cls-1" d="M28.15,10.9436a11.81,11.81,0,0,1-3.8579,6.0956l-8.8564,7.5346a1.2543,1.2543,0,0,1-1.6351-.0013L4.9462,17.04a11.824,11.824,0,0,1-3.86-6.0976A7.43,7.43,0,0,1,.846,8.08,7.8741,7.8741,0,0,1,8.5755.6273a7.6641,7.6641,0,0,1,6.0426,3.3952A7.6654,7.6654,0,0,1,20.6606.6273,7.8735,7.8735,0,0,1,28.39,8.08,7.46,7.46,0,0,1,28.15,10.9436Zm-1.8582-2.53c-.2743-2.8656-2.2856-5.6705-5.629-5.6705-2.3281,0-4.2247,1.9126-5.0709,3.81L14.62,8.7307l-.9716-2.1776c-.8463-1.8963-2.7439-3.81-5.0709-3.81-3.3423,0-5.3547,2.8049-5.6152,5.5744l-.017.1112a5.5451,5.5451,0,0,0,.2063,2.0045,9.7,9.7,0,0,0,3.1807,5.0033l8.2867,7.05,8.2887-7.0514a9.6948,9.6948,0,0,0,3.1786-5.0008A5.5218,5.5218,0,0,0,26.2917,8.4135Z" transform="translate(-0.7975 -0.6273)"/></svg>
+                </a>
+                <a href="#" class="head-item head-icon">
+                  <svg id="comment" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.9953 24.9951"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>comment</title><path class="cls-1" d="M16.405,13.28H8.594a.7811.7811,0,1,0,0,1.5621h7.811a.7811.7811,0,1,0,0-1.5621Zm1.5622-4.6861H7.0318a.7808.7808,0,1,0,0,1.5616H17.9672a.7808.7808,0,1,0,0-1.5616ZM12.5.0015C5.5978.0015.002,4.8972.002,10.937a10.4684,10.4684,0,0,0,4.6864,8.5291v5.5305l5.4749-3.322a14.3345,14.3345,0,0,0,2.3363.1979c6.9027,0,12.4977-4.8962,12.4977-10.9355S19.4023.0015,12.5.0015Zm0,20.3085a12.615,12.615,0,0,1-2.64-.2866l-3.6776,2.211.0493-3.6232A9.0567,9.0567,0,0,1,1.5641,10.937C1.5641,5.7607,6.46,1.5635,12.5,1.5635S23.4352,5.7607,23.4352,10.937,18.539,20.31,12.5,20.31Z" transform="translate(-0.002 -0.0015)"/></svg>
+                </a>
+              </div>
+              <div class="btn-block login-mob">
+                <a href="#" class="head-item head-btn style2">Login</a>
+              </div>
+            </div>
+            <div class="head-btns va">
+              <div class="btn-block">
+                <a href="#" class="head-item head-btn">List Your Vehicle</a>
+              </div>
+              <div class="btn-block">
+                <a href="#" class="head-item head-btn">List as Dealer</a>
+              </div>
+              <div class="btn-block login-desktop">
+                <a href="#" class="head-item head-btn style2">Login</a>
+              </div>
+            </div>
+          </div>
+          <nav class="flex-end">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="garage-t-shirt.html">Garage T-shirt</a></li>
+              <li><a href="loan-calculator.html">Loan Calculator</a></li>
+              <li><a href="vlog.html">Video</a></li>
+              <li><a href="car-shows.html">Car Shows</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section id="header-content" class="black">
+        <div class="container inner">
+          <img src="img/cars2.png" class="main-car mx zind down" alt="car in header" />
+        </div>
+        <!--<div class="gray-line"></div>-->
+        <img src="img/calculator.jpg" class="header-bg" alt="header background" />
+      </section>
+
+      <section id="calculator-section" class="dark pt45 pbot">
+        <div class="container">
+          <div class="text-block bred pt2">
+            <h4 class="whitec tc">CSH AUTO LOAN CALCULATOR</h4>
+            <div class="fl calculator-top">
+              <div class="col col50 pr wc">
+                <h5 class="text-normal lh3">Let's estimate your monthly <br>car loan payment</h5>
+                <form class="form-calculator">
+                  <div class="va field-label">
+                    <div class="label-cont">
+                      <label for="total-amount">Total Amount</label>
+                    </div>
+                    <input type="text" id="total-amount" class="input">
+                  </div>
+                  <div class="va field-label">
+                    <div class="label-cont">
+                      <label for="down-payment">Down Payment</label>
+                    </div>
+                    <input type="text" id="down-payment" class="input">
+                  </div>
+                  <div class="va field-label">
+                    <div class="label-cont">
+                      <label for="down-payment">Length of loan <span>(in months)</span></label>
+                    </div>
+                    <div class="select">
+                      <p class="select-name">Select Condition</p>
+                      <input type="hidden" id="interval" name="interval" value="no" class="input" />
+                      <ul class="select-list">
+                        <li>12 months</li>
+                        <li>24 months</li>
+                        <li>36 months</li>
+                        <li>48 months</li>
+                        <li>60 months</li>
+                        <li>72 months</li>
+                        <li>84 months</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="va field-label">
+                    <div class="label-cont">
+                      <label for="interest-rate">Interest Rate</label>
+                    </div>
+                    <input type="text" id="interest-rate" class="input">
+                  </div>
+                  <div class="va field-label">
+                    <div class="label-cont">
+                      <label for="sales-tax">Sales Tax</label>
+                    </div>
+                    <input type="text" id="sales-tax" class="input">
+                  </div>
+                  <div class="submit-calculator mt30">
+                    <button id="calculator-submit" type="submit" class="submit-dark va">
+                      <img src="img/calculator.svg" alt="calculator" />
+                      <p>CALCULATE</p>
+                    </button>
+                    <p id="error" class="error tc" style="display: none;">Please fill in all fields.</p>
+                  </div>
+                </form>
+              </div>
+              <div class="col col50">
+                <div class="text-block p30">
+                  <h5 class="text-normal">Your estimated payment <span class="dredc">$</span><span id="monthly-payment-title" class="dredc">0</span><span class="dredc">/mo</span>.</h5>
+                  <h5 class="text-normal breakdown">Breakdown</h5>
+                  <div class="info-lines mt15">
+                    <div class="info-line spb">
+                      <p>Car Price</p>
+                      <p><strong>$</strong><strong id="car-price">0</strong></p>
+                    </div>
+                    <div class="info-line spb">
+                      <p>Down Payment</p>
+                      <p><strong>$</strong><strong id="down-payment2">0</strong></p>
+                    </div>
+                    <div class="info-line spb">
+                      <p>Estimated sales tax</p>
+                      <p><strong>$</strong><strong id="estimated-sales-tax">0</strong></p>
+                    </div>
+                    <div class="info-line spb">
+                      <p>Other fees*</p>
+                      <p><strong id="other-fees">not included</strong></p>
+                    </div>
+                  </div>
+
+                  <div class="info-lines mt40">
+                    <div class="info-line spb">
+                      <p>Total loan amount</p>
+                      <p><strong>$</strong><strong id="total-loan-amount">0</strong></p>
+                    </div>
+                    <div class="info-line spb">
+                      <p>Total interest paid</p>
+                      <p><strong>$</strong><strong id="total-interest-paid">0</strong></p>
+                    </div>
+                    <div class="info-line spb">
+                      <p>Total loan & interest paid</p>
+                      <p><strong>$</strong><strong id="total-loan-and-interest-paid">0</strong></p>
+                    </div>
+                    <div class="info-line spb">
+                      <p>Monthly payment</p>
+                      <p><strong>$</strong><strong id="monthly-payment">0</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="shop-by-category" class="gray2 pad">
+        <div class="container">
+          <h2 class="whitec tc">SHOP BY CATEGORY</h3>
+          <div class="items hover">
+
+            <a href="#" class="item w3">
+              <div class="mright item-cont tc">
+                <div class="car-block">
+                  <h5>USA MUSCLE</h6>
+                  <div class="car-image">
+                    <img src="img/car1.png" alt="USA MUSCLE" />
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="item w3">
+              <div class="mright item-cont tc">
+                <div class="car-block">
+                  <h5>Classics & Customs</h6>
+                  <div class="car-image">
+                    <img src="img/car2.png" alt="Classics & Customs" />
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="item w3">
+              <div class="mright item-cont tc">
+                <div class="car-block">
+                  <h5>LUXURY PERFORMANCE</h6>
+                  <div class="car-image">
+                    <img src="img/car3.png" alt="LUXURY PERFORMANCE" />
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="item w3">
+              <div class="mright item-cont tc">
+                <div class="car-block">
+                  <h5>EURO EXOTIC</h6>
+                  <div class="car-image">
+                    <img src="img/car4.png" alt="EURO EXOTIC" />
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="item w3">
+              <div class="mright item-cont tc">
+                <div class="car-block">
+                  <h5>JDM TUNER</h6>
+                  <div class="car-image">
+                    <img src="img/car5.png" alt="JDM TUNER" />
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="item w3">
+              <div class="mright item-cont tc">
+                <div class="car-block">
+                  <h5>SUV & JEEP</h6>
+                  <div class="car-image">
+                    <img src="img/car6.png" alt="SUV & JEEP" />
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-cols fl">
+          <div class="footer-col f1">
+            <h6 class="whitec">CSH</h6>
+            <div class="mt25">
+              <p>People who are passionate about cars love to shop for cars. Finding that amazing combination of a vehicle that you love, with all the best options, and in the perfect color - for exactly the right price is truly an adrenaline rush. Quite often, these same people will even car shop when they aren’t planning to buy.</p>
+            </div>
+          </div>
+          <div class="footer-col f2">
+            <h6 class="whitec">CATEGORIES</h6>
+            <ul class="fl">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="loan-calculator.html">Loan Calculator</a></li>
+              <li><a href="garage-t-shirt.html">Garage T-shirt</a></li>
+              <li><a href="#">Sale Conditions</a></li>
+              <li><a href="car-details.html">Car Shows</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Terms & Conditions</a></li>  
+            </ul>
+          </div>
+          <div class="footer-col f2">
+            <h6 class="whitec">FOLLOW US</h6>
+            <div class="sots va">
+              <a href="#" target="_blank" title="link to facebook">
+                <svg id="facebook" width="12" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.2894 22.9246"><defs><style>.cls-2{fill-rule:evenodd;}</style></defs><title>facebook</title><path class="cls-1" d="M11.8262,4.5036,9.84,4.5044c-1.3687,0-1.6191.5378-1.6191,1.5974V8.3071h3.4662a.4634.4634,0,0,1,.328.1372.4694.4694,0,0,1,.1357.3306L12.15,12.5438a.4653.4653,0,0,1-.4635.4673H8.221v9.51a.4651.4651,0,0,1-.4634.4673H3.8908a.4648.4648,0,0,1-.4635-.4673v-9.51H.4636A.4655.4655,0,0,1,0,12.5438V8.7749a.4654.4654,0,0,1,.4635-.4678H3.4275V5.7057c0-3.4273,2.14-5.642,5.4514-5.642l2.9479.0049A.4658.4658,0,0,1,12.29.536v3.5A.4656.4656,0,0,1,11.8262,4.5036Z" transform="translate(-0.0001 -0.0637)"/></svg>
+              </a>
+              <a href="#" target="_blank" title="link to twitter">
+                <svg id="twitter" width="26" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.7691 21.3153"><defs><style>.cls-2{fill-rule:evenodd;}</style></defs><title>twitter</title><path class="cls-1" d="M22.86,6.5753l.0173.697c0,7.1128-5.317,15.3138-15.0406,15.3138A14.7838,14.7838,0,0,1-.2671,20.1688a11.0272,11.0272,0,0,0,1.2614.0733A10.4892,10.4892,0,0,0,7.5591,17.94a5.308,5.308,0,0,1-4.9372-3.7388A5.1823,5.1823,0,0,0,5.01,14.11,5.3655,5.3655,0,0,1,.77,8.8306V8.7635A5.2118,5.2118,0,0,0,3.1644,9.44,5.4541,5.4541,0,0,1,1.5282,2.2548,14.9225,14.9225,0,0,0,12.4241,7.8784a5.5093,5.5093,0,0,1-.1369-1.2257,5.3358,5.3358,0,0,1,5.2871-5.3819,5.2273,5.2273,0,0,1,3.8578,1.7005,10.5294,10.5294,0,0,0,3.3591-1.3064,5.3964,5.3964,0,0,1-2.3244,2.9759,10.4332,10.4332,0,0,0,3.0352-.848A10.75,10.75,0,0,1,22.86,6.5753Z" transform="translate(0.2671 -1.2708)"/></svg>
+              </a>
+              <a href="#" target="_blank" title="link to google">
+                <svg id="google" widht="24" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.7865 24.1312"><defs><style>.cls-2{fill-rule:evenodd;}</style></defs><title>google</title><path class="cls-1" d="M19.0825,25H4.2159a4.4921,4.4921,0,0,1-4.46-4.5249V5.3931A4.492,4.492,0,0,1,4.2159.8686H19.0825a4.492,4.492,0,0,1,4.46,4.5245V20.4749A4.4921,4.4921,0,0,1,19.0825,25ZM8.63,5.5217c-2.1255,0-4.1255,1.6329-4.1255,3.5255a3.45,3.45,0,0,0,3.6114,3.4966l.4386-.0155a1.9959,1.9959,0,0,0-.241.8989,1.88,1.88,0,0,0,.6452,1.3288l-.8216.0073c-2.633-.0016-4.66,1.7013-4.66,3.4644,0,1.7375,2.2214,2.8245,4.8543,2.8245,3.0015,0,4.6594-1.7261,4.6594-3.464a3.3646,3.3646,0,0,0-1.6564-3.1253c-.4283-.309-1.2486-1.0565-1.2486-1.4974,0-.5153.1437-.77.91-1.3768a3.2434,3.2434,0,0,0,1.3379-2.5114A2.87,2.87,0,0,0,10.8049,6.3h1.5027l1.0649-.778Zm11.94,4.3959H17.5959V6.9014H16.1107V9.9176H13.1359v1.5368h2.9748v3.0113h1.4852V11.4544h2.9733ZM8.8023,12.0516c-1.2218-.0358-2.3833-1.3854-2.5945-3.0133S6.8161,6.1662,8.0363,6.202c1.221.0374,2.3818,1.3426,2.5931,2.969C10.8419,10.8,10.021,12.09,8.8023,12.0516Zm2.9122,5.239a2.2262,2.2262,0,0,1,.0582.4966c0,1.4033-.8908,2.5-3.4488,2.5-1.82,0-3.1345-1.1675-3.1345-2.5728,0-1.3772,1.63-2.5216,3.4495-2.5025a3.929,3.929,0,0,1,1.18.193C10.8064,16.1,11.5157,16.4955,11.7145,17.2906Z" transform="translate(0.244 -0.8686)"/></svg>
+              </a>
+              <a href="#" target="_blank" title="link to linkedin">
+                <svg id="linkedin" width="24" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.7865 24.1312"><defs><style>.cls-2{fill-rule:evenodd;}</style></defs><title>linkedin</title><path class="cls-1" d="M22.4123,25H2.14A1.7444,1.7444,0,0,1,.3824,23.27V2.5975A1.7435,1.7435,0,0,1,2.14.8686H22.4123a1.7427,1.7427,0,0,1,1.7566,1.7289V23.27A1.7434,1.7434,0,0,1,22.4123,25ZM4,21.0676H7.5937V10.1728H4ZM5.82,4.92A1.8864,1.8864,0,1,0,5.773,8.6849h.0241A1.887,1.887,0,1,0,5.82,4.92Zm14.7292,9.9c0-3.348-1.7731-4.9039-4.1378-4.9039a3.56,3.56,0,0,0-3.2374,1.801v-1.545H9.5812c.047,1.0219,0,10.8948,0,10.8948h3.5923V14.9827a2.4651,2.4651,0,0,1,.12-.8826,1.9651,1.9651,0,0,1,1.8432-1.3251c1.2992,0,1.82.999,1.82,2.4638v5.8288h3.593Zm-7.3752-3.1029v.0342h-.0232C13.1568,11.7418,13.1655,11.73,13.1738,11.7178Z" transform="translate(-0.3824 -0.8686)"/></svg>
+              </a>
+              <a href="#" target="_blank" title="link to youtube">
+                <svg id="youtube" width="21" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.3703 24.3926"><defs><style>.cls-2{fill-rule:evenodd;}</style></defs><title>youtube</title><path class="cls-1" d="M20.1348,23.4732a3.641,3.641,0,0,1-1.11.6713,3.793,3.793,0,0,1-1.3666.2451H3.3066a3.7439,3.7439,0,0,1-1.35-.2451,3.6165,3.6165,0,0,1-1.1116-.6713,3.2889,3.2889,0,0,1-.7615-.995,2.7342,2.7342,0,0,1-.2785-1.2339V14.0537a2.764,2.764,0,0,1,.28-1.22,3.0845,3.0845,0,0,1,.7616-.999,3.8431,3.8431,0,0,1,1.1116-.6721,3.607,3.607,0,0,1,1.3505-.2536H17.659a3.67,3.67,0,0,1,1.358.2536,3.8344,3.8344,0,0,1,1.1189.6721,3.0536,3.0536,0,0,1,.76.999,2.7614,2.7614,0,0,1,.2785,1.22v7.1906a2.7193,2.7193,0,0,1-.28,1.2339A3.1905,3.1905,0,0,1,20.1348,23.4732ZM6.0287,13.3161H1.2758V14.43H2.799v7.6172H4.2678V14.4625H6.0287ZM9.611,15.5755h-1.47v4.0486c0,.2935.0025.5211.0135.6778.01.16-.011.2609-.0641.3041a.5615.5615,0,0,1-.3782.3847c-.2033.0794-.361-.0342-.4708-.3521a.7825.7825,0,0,1-.0147-.3184c.0111-.1714.0147-.392.0147-.666l-.0307-4.0787H5.7393l.0344,4.0156c0,.3151-.0074.5781-.0186.7926a1.9142,1.9142,0,0,0,.0186.482c.02.1779.0393.3636.0615.5663a.63.63,0,0,0,.3057.4836,1.0866,1.0866,0,0,0,.5964.1653,1.9623,1.9623,0,0,0,.674-.1172,2.37,2.37,0,0,0,.6063-.3167,1.3644,1.3644,0,0,0,.4068-.4352l-.0284.8015,1.215.031Zm4.7492,1.262a1.4816,1.4816,0,0,0-.6691-1.376,1.0175,1.0175,0,0,0-.5126-.1311,2.1435,2.1435,0,0,0-1.2162.5076V13.3161H10.4909v8.6651l1.2174-.0326.0937-.54a2.7164,2.7164,0,0,0,1.0647.6233,1.0115,1.0115,0,0,0,.8-.0908,1.3086,1.3086,0,0,0,.5114-.6726,2.9535,2.9535,0,0,0,.1823-1.0727Zm4.6384,2.9339H17.8969v.7357a.4952.4952,0,0,1-.1836.4091.6742.6742,0,0,1-.4375.1449h-.2292a.6155.6155,0,0,1-.4214-.1449.516.516,0,0,1-.17-.4091V18.95h2.5435V18.049c0-.3371-.0049-.6628-.016-.9734a3.7639,3.7639,0,0,0-.0778-.7279,1.0828,1.0828,0,0,0-.3943-.7144,1.7836,1.7836,0,0,0-.7665-.366,2.393,2.393,0,0,0-.897-.0342,1.7609,1.7609,0,0,0-.7923.3106,1.6858,1.6858,0,0,0-.6224.804,4.1134,4.1134,0,0,0-.191,1.41v2.0152a2.2351,2.2351,0,0,0,.6568,1.8173,1.9724,1.9724,0,0,0,1.2779.5076h.1306a1.9567,1.9567,0,0,0,1.3285-.655,1.5915,1.5915,0,0,0,.4325-1.1627C19.05,20.1264,19.033,19.9546,18.9986,19.7714Zm-2.3192-3.1562a.6785.6785,0,0,1,.4658-.1714h.0641a.7587.7587,0,0,1,.488.1637.55.55,0,0,1,.2.4445l-.0332.8H16.4564l.032-.8A.5689.5689,0,0,1,16.6794,16.6152Zm-4.0925,4.3515a.7586.7586,0,0,1-.4583-.1486.4211.4211,0,0,1-.1959-.3436V16.6734a.444.444,0,0,1,.1959-.3509.7255.7255,0,0,1,.4583-.1563.718.718,0,0,1,.4548.1563.4458.4458,0,0,1,.2.3509v3.8011a.4246.4246,0,0,1-.2.3436A.7533.7533,0,0,1,12.5869,20.9667Zm2.6544-12.17a2.6465,2.6465,0,0,1-.4313.5065,1.0224,1.0224,0,0,1-.5607.1644,1.065,1.065,0,0,1-.6087-.1644,1.2454,1.2454,0,0,1-.3685-.4421.992.992,0,0,1-.0775-.2716,2.1237,2.1237,0,0,0-.0506-.27,2.6076,2.6076,0,0,1-.0309-.4445V2.6529H14.49v5.208a.4773.4773,0,0,0,.1417.3448.5272.5272,0,0,0,.3858.147.55.55,0,0,0,.3832-.147.4535.4535,0,0,0,.1639-.3448V2.6529H16.84V9.3363H15.2118Zm-3.4725.0326a1.4411,1.4411,0,0,1-.6211.54,2.0459,2.0459,0,0,1-.9131.195A2.67,2.67,0,0,1,9.2759,9.4a.9972.9972,0,0,1-.5916-.4727,2.3545,2.3545,0,0,1-.3228-.74,7.0576,7.0576,0,0,1-.0961-1.3426V5.076a5.9112,5.9112,0,0,1,.16-1.4892,1.5071,1.5071,0,0,1,.6259-.87,1.78,1.78,0,0,1,1.1042-.3285,2.2712,2.2712,0,0,1,.9919.1962,1.3907,1.3907,0,0,1,.6543.5736,2.1917,2.1917,0,0,1,.29.6729,5.249,5.249,0,0,1,.0949,1.0988v1.718a6.9244,6.9244,0,0,1-.0949,1.3466A1.9752,1.9752,0,0,1,11.7688,8.829Zm-.8811-4.6381a.68.68,0,0,0-.1984-.4983.6215.6215,0,0,0-.4547-.206.6133.6133,0,0,0-.4547.206.6829.6829,0,0,0-.2022.4983V7.7457a.6625.6625,0,0,0,.1936.4678.6137.6137,0,0,0,.4621.2031.6749.6749,0,0,0,.6543-.6709ZM6.5538,9.5329H4.9863v-5.13L3.0183-.003H4.7312l.98,3.2926L6.6856-.003h1.71L6.5538,4.4026Z" transform="translate(0.1955 0.003)"/></svg>
+              </a>
+              <a href="#" target="_blank" title="link to linkedin">
+                <svg id="linkedin" width="24" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.7865 24.1312"><defs><style>.cls-2{fill-rule:evenodd;}</style></defs><title>linkedin</title><path class="cls-1" d="M22.4123,25H2.14A1.7444,1.7444,0,0,1,.3824,23.27V2.5975A1.7435,1.7435,0,0,1,2.14.8686H22.4123a1.7427,1.7427,0,0,1,1.7566,1.7289V23.27A1.7434,1.7434,0,0,1,22.4123,25ZM4,21.0676H7.5937V10.1728H4ZM5.82,4.92A1.8864,1.8864,0,1,0,5.773,8.6849h.0241A1.887,1.887,0,1,0,5.82,4.92Zm14.7292,9.9c0-3.348-1.7731-4.9039-4.1378-4.9039a3.56,3.56,0,0,0-3.2374,1.801v-1.545H9.5812c.047,1.0219,0,10.8948,0,10.8948h3.5923V14.9827a2.4651,2.4651,0,0,1,.12-.8826,1.9651,1.9651,0,0,1,1.8432-1.3251c1.2992,0,1.82.999,1.82,2.4638v5.8288h3.593Zm-7.3752-3.1029v.0342h-.0232C13.1568,11.7418,13.1655,11.73,13.1738,11.7178Z" transform="translate(-0.3824 -0.8686)"/></svg>
+              </a>
+              <a href="#" target="_blank" title="link to pinterest">
+                <svg id="pinterest" width="18" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.3619 23.9852"><defs><style>.cls-2{fill-rule:evenodd;}</style></defs><title>pinterest</title><path class="cls-1" d="M10.5739,17.5812c-1.4372-.1131-2.04-.8365-3.1667-1.5319-.62,3.3016-1.3768,6.468-3.619,8.1217-.6921-4.9911,1.0163-8.7392,1.81-12.7186C4.245,9.1384,5.7605,4.4816,8.6135,5.63c3.51,1.411-3.04,8.6024,1.3572,9.5,4.5915.9379,6.4658-8.0948,3.6189-11.0324C9.4759-.1443,1.6153,4,2.5819,10.0731c.2353,1.4847,1.7447,1.9354.6031,3.9843C.5523,13.4647-.2333,11.3542-.1322,8.5412A8.9336,8.9336,0,0,1,7.86.2665c4.9579-.5639,9.6113,1.8494,10.2538,6.5889C18.8367,12.2047,15.8753,17.9981,10.5739,17.5812Z" transform="translate(0.1407 -0.1858)"/></svg>
+              </a>
+              <a href="#" target="_blank" title="link to instagram">
+                <svg id="instagram" width="23" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.682 23.6928"><defs><style>.cls-2{fill-rule:evenodd;}</style></defs><title>instagram</title><path class="cls-1" d="M17.5661,24.9872H5.782A5.5806,5.5806,0,0,1,.3329,19.2955V6.9865A5.5807,5.5807,0,0,1,5.782,1.2944H17.5661a5.5806,5.5806,0,0,1,5.4488,5.6921v12.309A5.5805,5.5805,0,0,1,17.5661,24.9872ZM11.674,5.8018a7.1958,7.1958,0,0,0-7.0256,7.34A7.1953,7.1953,0,0,0,11.674,20.48,7.1954,7.1954,0,0,0,18.7,13.1414,7.196,7.196,0,0,0,11.674,5.8018Zm7.1937-2.6062a2.1262,2.1262,0,0,0-2.076,2.1686,2.078,2.078,0,1,0,4.152,0A2.1261,2.1261,0,0,0,18.8677,3.1956Zm-7.1937,15.71a5.6526,5.6526,0,0,1-5.5193-5.7645A5.6532,5.6532,0,0,1,11.674,7.3757a5.653,5.653,0,0,1,5.5193,5.7657A5.6525,5.6525,0,0,1,11.674,18.9059Z" transform="translate(-0.3329 -1.2944)"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copy va">
+          <a href="index.html" class="logo-footer" title="link to home page">
+            <img src="img/logotype_footer.jpg" alt="logotype in footer" />
+          </a>
+          <p class="copy-text">Copyright &copy; 2024 - Car Show Hero</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/calculator.js"></script>
+    </div>
+  </body>
+</html>

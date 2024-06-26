@@ -1,0 +1,80 @@
+.arrows-bg, .arrows-bg2 {
+    z-index: 1400;
+}
+
+.arrows-bg {
+    position: absolute;
+    height: 101%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+    animation: arrows_bg 3.5s linear;
+    animation-iteration-count: infinite;
+}
+
+@media(max-width: 991px) {
+    .arrows-bg {
+        top: auto;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes arrows_bg {
+    0% {
+        left: 40%;
+    }
+    25% {
+        left: 45%;
+    }
+    50% {
+        left: 40%;
+    }
+    100% {
+        left: 40%;
+    }
+}
+
+.bg-black {
+    position: absolute;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 55%;
+    background-color: #000;
+}
+
+@media(max-width: 991px) {
+    .bg-black {
+        display: none;
+    }
+}
+
+.arrows-bg2 {
+    position: absolute;
+    min-width: 100%;
+    width: 750px;
+    max-width: none;
+    height: 100%;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+    animation: arrows_bg2 3.5s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrows_bg2 {
+    0% {
+        top: -50%;
+    }
+    25% {
+        top: -40%;
+    }
+    50% {
+        top: -50%;
+    }
+    100% {
+        top: -50%;
+    }
+}

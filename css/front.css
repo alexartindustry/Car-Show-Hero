@@ -1,0 +1,49 @@
+.front {
+    padding-top: 155px;
+}
+
+@media(max-width: 1260px) {
+    .front {
+        padding-top: 10vw;
+    }
+}
+
+.form-block {
+    position: relative;
+    background-color: #e91c22;
+    border-radius: 12px;
+    padding: 60px 50px;
+    overflow: hidden;
+}
+
+@media(max-width: 1260px) {
+    .form-block {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media(max-width: 991px) {
+    .form-block {
+        padding: 65px 15px 40px 15px;
+    }
+}
+
+/*by manufacturer begin*/
+.logos .image-block {
+    padding: 25px 50px;
+}
+
+.logos img {
+    max-height: 100%;
+}
+
+@media(max-width: 768px) {
+    .logos .image-block {
+        height: auto;
+    }
+    .logos img {
+        max-height: 150px;
+    }
+}
+/*by manufacturer end*/

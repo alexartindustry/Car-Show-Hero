@@ -1,0 +1,100 @@
+.pagination a {
+    font-family: 'SquareDemi-Normal';
+    height: 52px;
+    min-width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #2b1e1f;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 3px;
+    transition: .2s;
+    margin-top: 10px;
+}
+
+.pagination {
+    position: relative;
+    justify-content: center;
+    list-style: none;
+    padding: 0 180px;
+    margin-top: 35px;
+}
+
+@media(max-width: 768px) {
+    .pagination {
+        padding: 0;
+    }
+}
+
+.pagination li {
+    margin-right: 8px;
+}
+
+.pagination a:hover, .pagination li.active a {
+    color: #fff;
+    background-color: #511415;
+    transition: .2s;
+}
+
+.pagination-btn .btn {
+    min-width: 170px;
+}
+
+@media(max-width: 768px) {
+    .pagination-btn .btn {
+        min-width: 52px;
+        padding: 0;
+    }
+}
+
+.pagination-btn {
+    position: absolute;
+    top: 0;
+}
+
+@media(max-width: 768px) {
+    .pagination-btn {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.pagination svg {
+    height: 15px;
+    fill: #fff;
+}
+
+.prev span {
+    padding-left: 8px;
+}
+
+.next span {
+    padding-right: 8px;
+}
+
+@media(max-width: 768px) {
+    .pagination-btn span {
+        display: none;
+    }
+}
+
+.disabled svg {
+    fill: rgba(241,242,243,0.3);
+}
+
+.disabled .btn {
+    color: rgba(241,242,243,0.3);
+    background-color: transparent;
+    pointer-events: none;
+}

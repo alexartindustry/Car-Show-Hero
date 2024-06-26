@@ -1,0 +1,172 @@
+
+.arrows {
+    position: absolute;
+    left: 270px;
+    /*height: 400px;*/
+    height: 145%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow1 {
+    animation: arrow1 3.5s linear;
+    animation-iteration-count: infinite;
+}
+
+@media(max-width: 1260px) {
+    .arrows {
+        height: 400px;
+    }
+    .arrow1 {
+        left: 225px;
+    }
+}
+
+.further {
+    left: 44%;
+    animation: arrow1_further 3.5s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow1 {
+    0% {
+        left: 265px;
+    }
+    25% {
+        left: 285px;
+    }
+    50% {
+        left: 265px;
+    }
+    100% {
+        left: 265px;
+    }
+}
+
+@keyframes arrow1_further {
+    0% {
+        left: 44%;
+    }
+    25% {
+        left: 47%;
+    }
+    50% {
+        left: 44%;
+    }
+    100% {
+        left: 44%;
+    }
+}
+
+@media(max-width: 1260px) {
+    @keyframes arrow1 {
+        0% {
+            left: 225px;
+        }
+        25% {
+            left: 245px;
+        }
+        50% {
+            left: 225px;
+        }
+        100% {
+            left: 225px;
+        }
+    }
+    @keyframes arrow1_further {
+        0% {
+            left: 40%;
+        }
+        25% {
+            left: 44%;
+        }
+        50% {
+            left: 40%;
+        }
+        100% {
+            left: 40%;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .arrow3 {
+        display: none;
+    }
+}
+
+.arrow4, .arrow5 {
+    position: absolute;
+    min-width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow5 {
+    top: -60%;
+    animation: arrow5 3.5s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow5 {
+    0% {
+        top: -60%;
+    }
+    25% {
+        top: -35%;
+    }
+    50% {
+        top: -60%;
+    }
+    100% {
+        top: -60%;
+    }
+}
+
+@media(max-width: 768px) {
+    .arrow5 {
+        top: -39%;
+        min-width: 150%;
+    }
+    @keyframes arrow5 {
+        0% {
+            top: -39%;
+        }
+        25% {
+            top: -25%;
+        }
+        50% {
+            top: -39%;
+        }
+        100% {
+            top: -39%;
+        }
+    }
+}
+
+.arrow4 {
+    width: 400px;
+    max-width: none;
+    top: -77%;
+}
+
+@media(max-width: 500px) {
+    .arrow4 {
+        top: -50%;
+    }
+}
+
+.arrow2 {
+    left: -12%;
+}
+
+@media(max-width: 1260px) {
+    .arrow2 {
+        left: -19%;
+    }
+}
+
+.arrow3 {
+    left: auto;
+    right: 6%;
+}

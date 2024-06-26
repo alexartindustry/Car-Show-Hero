@@ -1,0 +1,158 @@
+input, textarea {
+	font-family: 'Arial';
+	font-size: 16px;
+	color: #212121;
+	background: #fff;
+	border: 2px solid #fff;
+	padding: 0 15px;
+	margin-top: 10px;
+	box-sizing: border-box;
+    outline: none;
+   -webkit-appearance: default-button;
+   -webkit-appearance: none;
+   -webkit-tap-highlight-color: transparent;
+}
+
+input:first-child {
+	margin-top: 0;
+}
+
+input {
+	height: 42px;
+	border-radius: 5px;
+}
+
+.big input {
+	height: 53px;
+}
+
+input:placeholder {
+    font-family: 'Arial';
+	font-size: 16px;
+	color: #212121;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	font-family: 'Arial';
+	font-size: 16px;
+	color: #212121;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+	font-family: 'Arial';
+	font-size: 16px;
+	color: #212121;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+	font-family: 'Arial';
+	font-size: 16px;
+	color: #212121;
+}
+	input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+	font-family: 'Arial';
+	font-size: 16px;
+	color: #212121;
+}
+
+textarea {
+	height: 120px;
+}
+
+input[type="submit"], button {
+	border: 0;
+	color: #fff;
+	justify-content: center;
+	background-color: #870004;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+}
+
+.submit-dark {
+	background-color: #450002;
+}
+
+button {
+	padding: 12px 40px;
+}
+
+button p {
+	position: relative;
+	top: 1px;
+	margin-top: 0;
+	padding-left: 10px;
+}
+
+#search-submit {
+	width: 145px;
+	height: 116px;
+	cursor: pointer;
+	transition: .2s;
+	padding: 0;
+}
+
+button:hover {
+	background-color: #000;
+	transition: .2s;
+}
+
+.wc .submit-dark:hover {
+	background-color: #f7f2cc;
+}
+
+.wc .submit-dark:hover p {
+	color: #000;
+}
+
+@media(max-width: 768px) {
+	button, #search-submit {
+		width: 100%;
+		justify-content: center;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#search-submit {
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#search-submit img {
+		margin: 0;
+		margin-right: 10px;
+	}
+}
+
+#search-submit p {
+	font-family: 'SquareDemi-Normal';
+	font-size: 20px;
+	color: #fff;
+	line-height: 1.1;
+	text-transform: uppercase;
+	margin-top: 13px;
+}
+
+@media(max-width: 768px) {
+	#search-submit p {
+		margin-top: 0;
+	}
+}
+
+.fields-left {
+	flex: 1 1;
+	margin-right: 11px;
+}
+
+@media(max-width: 768px) {
+	.fields-left {
+		width: 100%;
+		flex: none;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}	
+}
+
+.fields-left input {
+	width: 100%;
+}

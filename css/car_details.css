@@ -1,0 +1,160 @@
+.details-pt {
+    padding-top: 32px;
+}
+
+@media(max-width: 768px) {
+    .details-pt {
+        padding-top: 25px;
+    } 
+}
+
+.details-image {
+    display: block;
+    height: 190px;
+    position: relative;
+    background: #fff;
+    margin: 6px 6px 0 0;
+    text-decoration: none;
+    color: #474747;
+    z-index: 0;
+    overflow: hidden;
+}
+
+@media(max-width: 1260px) {
+    .details-image {
+        height: 130px;
+    }
+}
+
+.details-images {
+    margin: 0 -6px 0 0;
+}
+
+.details-image-cont {
+    display: block;
+    width: 100%;
+    float: left;
+    transition: width .2s;
+}
+
+@media only screen and (min-width: 450px) {
+    .details-image-cont {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .details-image-cont {
+        width: 33.333%;
+    }
+}
+
+.main-image {
+    width: 100%;
+}
+
+.main-image .details-image {
+    height: 575px;
+}
+
+@media(max-width: 1260px) {
+    .main-image .details-image {
+        height: 400px;
+    }
+}
+
+@media(max-width: 768px) {
+    .main-image .details-image {
+        height: 290px;
+    }
+}
+
+.seller-info {
+    width: 375px;
+}
+
+.description {
+    flex: 1 1;
+}
+
+@media(max-width: 991px) {
+    .seller-info {
+        width: 100%;
+        margin-top: 35px;
+    }
+    .description {
+        width: 100%;
+        flex: none;
+    }
+}
+
+.col-inner {
+    width: 50%;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    padding: 0 22px;
+}
+
+.col-inner:last-child {
+    border-right: 0;
+}
+
+@media(max-width: 1260px) {
+    .col-inner {
+        width: 100%;
+        border-right: 0;
+    }
+    .description .col-inner {
+        padding-left: 0;
+    }
+    .description .col-inner:last-child {
+        margin-top: 22px;
+    }
+}
+
+@media(max-width: 991px) {
+    .col-inner {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.bord-right {
+    border-right: 1px solid rgba(0,0,0,0.2);
+    margin-top: 22px;
+}
+
+@media(max-width: 991px) {
+    .bord-right {
+        border-right: 0;
+    }
+}
+
+.pl0 {
+    padding-left: 0;
+}
+
+.pr0 {
+    padding-right: 0;
+    margin-top: 22px;
+}
+
+@media(max-width: 991px) {
+    .pr0 {
+        margin-top: 0;
+    }
+}
+
+.w100 {
+    width: 100%;
+}
+
+.gray-desc {
+    height: 100%;
+    background-color: #f7f7f7;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 10px 22px;
+}
+
+.pt10 {
+    padding-top: 10px;
+}

@@ -1,0 +1,14 @@
+.events {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .reset-line h4 {
+        width: 100%;
+        text-align: center;
+    }
+    .reset-line .btn-block {
+        width: 100%;
+        padding-top: 20px;
+    }
+}

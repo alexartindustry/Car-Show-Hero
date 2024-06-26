@@ -1,0 +1,203 @@
+.items {
+    justify-content: center;
+    margin: 0 -15px 0 0;
+    padding-top: 57px;
+}
+
+.mr30 .items {
+    margin: 0 -30px 0 0;
+}
+
+.sm-pt {
+    padding-top: 42px;
+}
+
+@media(max-width: 991px) {
+    .items {
+        padding-top: 40px;
+    }
+    .sm-pt {
+        padding-top: 22px;
+    }
+}
+
+.pt-fields {
+    padding-top: 15px;
+}
+
+@media(max-width: 768px) {
+    .pt-fields {
+        padding-top: 0;
+    }
+}
+
+.item {
+    position: relative;
+    top: 0;
+    float: left;
+    margin-top: 15px;
+    transition: .4s;
+}
+
+.fields {
+    margin-top: 22px;
+}
+
+.hover .item:hover {
+    top: -3px;
+    transition: .4s;
+}
+
+.hover .item:hover .item-cont {
+    box-shadow: 0 0 12px rgba(255,255,255,0.9);
+    transition: .4s;
+}
+
+.mright {
+    margin-right: 15px;
+}
+
+.mr30 .mright {
+    margin-right: 30px;
+}
+
+.item-cont {
+    position: relative;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-right: 15px;
+    transition: .4s;
+}
+
+.w4 {
+    width: 25%;
+}
+
+.w3 {
+    width: 33.333%;
+}
+
+.w2 {
+    width: 50%;
+}
+
+@media(max-width: 1260px) {
+    .w4 {
+        width: 33.333%;
+    }
+}
+
+@media(max-width: 991px) {
+    .w4, .w3 {
+        width: 50%;
+    }
+}
+
+@media(max-width: 768px) {
+    .item {
+        width: 100%;
+    }
+    .mright, .mr30 .mright {
+        margin-right: 0;
+    }
+    .items {
+        margin: 0;
+    }
+    .sm-size .item-cont {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+
+.car-block {
+    padding: 42px 25px 38px 25px;
+}
+
+@media(max-width: 1260px) {
+    .car-block {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.image-block {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.hbig {
+    height: 440px;
+}
+
+.item-text {
+    padding: 25px;
+}
+
+.item-text2 {
+    padding: 40px;
+}
+
+@media(max-width: 768px) {
+    .item-text, .item-text2 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.item .btn {
+    padding: 17px 30px 14px 30px;
+}
+
+.with-btn .btn {
+    width: auto;
+    max-width: none;
+}
+
+@media(max-width: 420px) {
+    .item .btn  {
+        max-width: 100%;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.with-btn .btn-block {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 30px;
+    padding: 0 15px;
+}
+
+.with-btn .item-cont {
+    padding-bottom: 76px;
+}
+
+.car-image {
+    height: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.car-image img {
+    max-height: 195px;
+}
+
+@media(max-width: 768px) {
+    .car-image {
+        height: auto;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1260px) {
+    .car-block h6 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,105 @@
+
+.block-item {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.block-item:first-child {
+    margin-top: 0;
+}
+
+.image-left {
+    position: relative;
+    width: 455px;
+    min-height: 340px;
+    overflow: hidden;
+}
+
+@media(max-width: 1260px) {
+    .image-left {
+        width: 400px;
+    }
+}
+
+@media(max-width: 768px) {
+    .image-left {
+        min-height: 270px;
+    }
+}
+
+.desc-right {
+    position: relative;
+    flex: 1 1;
+    padding: 32px 30px;
+}
+
+@media(max-width: 991px) {
+    .image-left {
+        width: 100%;
+    }
+    .desc-right {
+        width: 100%;
+        flex: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .desc-right {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.with-btns .desc-right {
+    padding-bottom: 110px;
+}
+
+@media(max-width: 410px) {
+    .with-btns .desc-right {
+        padding-bottom: 32px;
+    }
+}
+
+.with-btns .btns {
+    position: absolute;
+    width: 100%;
+    left: 30px;
+    bottom: 30px;
+}
+
+@media(max-width: 991px) {
+    .with-btns .btns {
+        left: 0;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px) {
+    .with-btns .btns {
+        padding: 0 15px;
+    }
+    .with-btns .btn {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .with-btns .btn-block {
+        flex: 1 1;
+    }
+}
+
+@media(max-width: 410px) {
+    .with-btns .btn-block {
+        width: 100%;
+        flex: none;
+        margin-right: 0;
+    }
+    .with-btns .btns {
+       position: relative;
+       left: auto;
+       bottom: auto;
+       padding: 0;
+       padding-top: 15px;
+    }
+}

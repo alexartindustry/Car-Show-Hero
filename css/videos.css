@@ -1,0 +1,71 @@
+.garage {
+    max-height: 207px;
+}
+
+.youtube {
+    max-height: 90px;
+}
+
+/*video*/
+iframe {
+    width: 100%;
+}
+  
+.video {
+    height:0;
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:25px;
+}
+  
+.video iframe {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+} 
+/*video end*/
+
+video {
+    width: 100%;
+    max-height: 100%;
+}
+
+.bord-radius {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/*video in items*/
+.video-responsive {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 100;
+    background: no-repeat #000;
+    background-size: cover;
+    background-position: center;
+    transition: .4s;
+  }
+
+.item-cont:hover .video-responsive {
+    opacity: 1;
+    transition: .4s;
+}
+  
+.video-responsive > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

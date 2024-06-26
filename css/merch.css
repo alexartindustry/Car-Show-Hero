@@ -1,0 +1,145 @@
+.merch-block {
+	background-color: #000;
+	border-radius: 12px;
+	padding: 65px 65px 150px 65px;
+}
+
+@media(max-width: 991px) {
+	.merch-block {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+@media(max-width: 768px) {
+	.merch-block {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.buy-now {
+	padding-top: 200px;
+}
+
+@media(max-width: 1260px) {
+	.buy-now {
+		padding-top: 150px;
+	}
+}
+
+@media(max-width: 991px) {
+	.buy-now {
+		padding-top: 45px;
+	}
+}
+
+.buy-now .select {
+	margin-top: 10px;
+}
+
+.buy-now-title {
+	padding-bottom: 10px;
+}
+
+.preview-tshirt {
+	display: block;
+	width: 16.6666%;
+	float: left;
+	transition: width .2s;
+}
+
+@media(max-width: 991px) {
+	.preview-tshirt {
+		width: 25%;
+	}
+}
+
+@media(max-width: 768px) {
+	.preview-tshirt {
+		width: 33.333%;
+	}
+}
+
+@media(max-width: 500px) {
+	.preview-tshirt {
+		width: 50%;
+	}
+}
+
+.preview-cont {
+	height: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background: #000;
+	border: 2px solid #000;
+	border-radius: 12px;
+	margin: 12px 12px 0 0;
+	text-decoration: none;
+	color: #474747;
+	padding: 20px;
+}
+
+@media(max-width: 1260px) {
+	.preview-cont {
+		height: 140px;
+	}
+}
+
+.preview-cont img {
+	max-height: 100%;
+}
+
+.selected, .preview-cont:hover {
+	border-color: rgba(255,255,255,0.3);
+}
+
+.previews {
+	list-style: none;
+	margin: 0 -12px 0 0;
+	padding: 0;
+}
+
+.tshirt-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #212121;
+	border: 3px solid #212121;
+	border-radius: 12px;
+	padding: 60px 30px;
+	transition: .3s;
+}
+
+@media(max-width: 768px) {
+	.tshirt-item {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+.tshirt-item:hover {
+    border-color: rgba(255,255,255,0.3);
+    transition: .3s;
+}
+
+.sold-out-block {
+	width: 43%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.sold-out-img {
+	width: 100%;
+}
+
+.sold-out-block h4 {
+	position: absolute;
+	left: 2%;
+	top: 30.5%;
+	transform: rotate(-45deg);
+}
